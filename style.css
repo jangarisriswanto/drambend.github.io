@@ -1,11 +1,48 @@
 
 .jumbotron {
-    padding-top: 10rem;
-    background-color: #7fffd4;
+    padding-top: 30rem;
+    background-image: url(img/img2.jpg);
+    background-size: cover;
+    color: white;
+}
+#drambend {
+    color: blue;
+    font-weight: 500;
 }
 body {
     min-height: 2000px;
 }
 #galeri {
     background-color: #7fffd4;
+}
+.typing-container {
+    text-align: center;
+
+}
+
+#typing-text {
+    border-right: 2px solid #333;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0 auto;
+    letter-spacing: 0.15em;
+    animation: typing 3s steps(40) infinite, blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        
+    }
 }

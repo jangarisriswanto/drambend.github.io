@@ -39,9 +39,11 @@
    <!-- akhir navbar -->
    <!-- awal jumbrotron -->
    <div class="item" data-aos="fade-right">
-   <section class="jumbotron text-center" >
-        <h1 class="display-4 mb-4">Hello, world!</h1>
-        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+   <section class="jumbotron text-center img-fluid" >
+        <h1 class="display-4 mb-4" id="drambend">dramband smk as-syafi'iyah</h1>
+        <div class="typing-container">
+          <h1 id="typing-text"></h1>
+      </div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,256L48,240C96,224,192,192,288,192C384,192,480,224,576,245.3C672,267,768,277,864,245.3C960,213,1056,139,1152,128C1248,117,1344,171,1392,197.3L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
     </section>
    </div>
@@ -57,10 +59,12 @@
             </div>
             <div class="row justify-content-between">
                 <div class="col-md-5">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum in odio, consectetur incidunt quidem explicabo inventore suscipit accusamus ea id!</p>
+                    <p>Eskul DramBend adalah tempat bagi kami yang memiliki cinta mendalam terhadap seni pertunjukan. Kami adalah kelompok siswa yang bersatu untuk menjelajahi dunia drama melalui berbagai cara kreatif. Dari akting hingga penulisan naskah, dari tata panggung hingga produksi, kami berusaha untuk menciptakan pengalaman yang beragam dan mendalam bagi anggota kami.</p>
                 </div>
                 <div class="col-md-5">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, perspiciatis. Debitis perspiciatis, minus recusandae illum ut consectetur sequi suscipit excepturi.</p>
+                    <p>Jika Anda juga memiliki hasrat untuk seni pertunjukan dan ingin merasakan pengalaman yang mendalam dalam dunia drama, saya sangat mengundang Anda untuk bergabung dengan Eskul DramBend. Mari kita bersama-sama menemukan keajaiban dalam setiap cerita yang kami bawakan dan merayakan keragaman dan kreativitas melalui seni pertunjukan.
+
+                    </p>
                 </div>
             </div>
         </div>
@@ -78,51 +82,35 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-md-4 mb-3">
+        <div class="col-md-6 mb-3">
             <div class="card">
-                <img src="img/poto.png" class="card-img-top" alt="...">
+                <img src="img/img1.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <p class="card-text">kegiatan derambend dalam rangka merayakan 17 agustus 2023 </p>
                 </div>
               </div>
         </div>
-        <div class="col-md-4 mb-3">
+        <div class="col-md-6 mb-3">
             <div class="card">
-                <img src="img/poto.png" class="card-img-top" alt="...">
+                <img src="img/img4.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <p class="card-text">pemotretan detik detik kegiatan drambend di tawang dalam rangka 17 agustusan</p>
                 </div>
               </div>
         </div>
-        <div class="col-md-4 mb-3">
+        <div class="col-md-6 mb-3">
             <div class="card">
-                <img src="img/poto.png" class="card-img-top" alt="...">
+                <img src="img/img3.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <p class="card-text">pemotretan setelah makan-makan dan solat duhur sebelum pulang</p>
                 </div>
               </div>
         </div>
-        <div class="col-md-4 mb-3">
+        <div class="col-md-6 mb-3">
             <div class="card">
-                <img src="img/poto.png" class="card-img-top" alt="...">
+                <img src="img/img2.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-              </div>
-        </div>
-        <div class="col-md-4 mb-3">
-            <div class="card">
-                <img src="img/poto.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-              </div>
-        </div>
-        <div class="col-md-4 mb-3">
-            <div class="card">
-                <img src="img/poto.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <p class="card-text">pemotretan setelah melaksanakan kegiatan 17 agustus di kec.cikatomas</p>
                 </div>
               </div>
         </div>
@@ -188,6 +176,45 @@
   AOS.init({
   duration: 1200,
 })
+ </script>
+ <script>
+const textList = [
+    "bisa.bisa.bisa",
+    "jaya.jaya.jaya.",
+    "kedepan makin kece",
+    " keren dan konpak"
+];
+
+const typingElement = document.getElementById("typing-text");
+let textIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+
+function typeText() {
+    const currentText = textList[textIndex];
+    if (isDeleting) {
+        typingElement.textContent = currentText.substring(0, charIndex - 1);
+        charIndex--;
+    } else {
+        typingElement.textContent = currentText.substring(0, charIndex + 1);
+        charIndex++;
+    }
+
+    if (!isDeleting && charIndex === currentText.length) {
+        isDeleting = true;
+        setTimeout(typeText, 100); // Tunggu sebelum menghapus
+    } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        textIndex = (textIndex + 1) % textList.length;
+        setTimeout(typeText, 100); // Tunggu sebelum menambahkan teks baru
+    } else {
+        setTimeout(typeText, isDeleting ? 80 : 120); // Kecepatan pengetikan (ms per karakter)
+    }
+}
+
+typeText();
+
+
  </script>
   </body>
 </html>
