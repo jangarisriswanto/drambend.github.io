@@ -46,3 +46,10 @@ body {
         
     }
 }
+.nav-link:hover {
+    color: rgb(93, 28, 224);
+    border-bottom: 2px solid red;
+    transition: 0.5s;
+    font-family: 'Courier New', Courier, monospace;
+}
+  
